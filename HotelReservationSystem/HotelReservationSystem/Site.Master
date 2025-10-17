@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HotelReservationSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Otel Rezervasyon Sistemi</title>
+    
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .logo-text {
+            color: white;
+        }
+        .user-info {
+            color: #ecf0f1;
+            font-size: 14px;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-menu li {
+            position: relative;
+        }
+        .nav-menu a {
+            display: block;
+            padding: 18px 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        .nav-menu a:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-bottom-color: #3498db;
+        }
+        .nav-menu a.active {
+            background-color: rgba(52, 152, 219, 0.2);
+            border-bottom-color: #3498db;
+        }
+        .nav-menu a i {
+            margin-right: 8px;
+        }
+        .main-wrapper {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .content-area {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            min-height: 70vh;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 5px 0;
+            color: #95a5a6;
+        }
+        .breadcrumb {
+            background-color: #ecf0f1;
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb span {
+            color: #7f8c8d;
+            margin: 0 8px;
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+            }
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<header class="header">
+    <div class="header-content">
+        <div class="top-bar">
+            <div class="logo">
+                <span class="logo-text">🏨 Otel Rezervasyon Sistemi</span>
+            </div>
+           <div class="user-info">
+    <span>👤 <%= Session["FullName"] != null ? Session["FullName"].ToString() : "Admin" %></span>
+    <span style="margin-left: 15px;">📅 <%= DateTime.Now.ToString("dd.MM.yyyy") %></span>
+    <a href="~/Logout.aspx" runat="server" 
+       style="margin-left: 15px; color: white; text-decoration: none; padding: 5px 15px; background-color: rgba(255,255,255,0.2); border-radius: 5px;">
+        🚪 Çıkış
+    </a>
+</div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li>
+                    <a href="~/Default.aspx" id="navHome" runat="server">
+                        🏠 Ana Sayfa
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Admin/RoomList.aspx" id="navRooms" runat="server">
+                        🛏️ Oda Yönetimi
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Admin/CustomerList.aspx" id="navCustomers" runat="server">
+                        👥 Müşteri Yönetimi
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Admin/ReservationList.aspx" id="navReservations" runat="server">
+                        📅 Rezervasyon Yönetimi
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Admin/Reports.aspx" id="navReports" runat="server">
+                        📊 Raporlar
+    </a>
+</li>
+                <li>
+                        <a href="/About.aspx">ℹ️ Hakkımızda</a>
+                </li>
+                <li>
+                        <a href="/Contact.aspx">📧 İletişim</a>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        <div class="main-wrapper">
+            <div class="content-area">
+                <div class="breadcrumb">
+                    <a href="<%= ResolveUrl("~/Default.aspx") %>">🏠 Ana Sayfa</a>
+                    <span>›</span>
+                    <asp:Literal ID="litBreadcrumb" runat="server"></asp:Literal>
+                </div>
+
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p><strong>Otel Rezervasyon Sistemi</strong> © <%= DateTime.Now.Year %></p>
+            <p>ASP.NET Web Forms | Entity Framework 6 | Telerik UI</p>
+            <p>Eren Mülkoğlu</p>
+
+        </footer>
+    </form>
+</body>
+</html>
