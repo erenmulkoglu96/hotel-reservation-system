@@ -1,0 +1,51 @@
+# Build Folders
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Database
+*.mdf
+*.ldf
+*.bak
+
+# Connection Strings (ÇOK ÖNEMLİ!)
+Web.config
+App.config
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# OS Files
+Thumbs.db
+.DS_Store
