@@ -62,10 +62,9 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 - **Şifre**: `admin123`
 
 
+
 ## Ekran Görüntüleri
 
-
-## 📸 Ekran Görüntüleri
 
 <div align="center">
   <table>
