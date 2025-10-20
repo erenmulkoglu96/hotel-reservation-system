@@ -47,7 +47,7 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 
 2. **Web.config'i Düzenleyin**
    - `Web.config` dosyasını açın
-   - Connection string'i kendi SQL Server bilgilerinizle güncelleyin:
+   - Connection string'i kendi SQL Server bilgilerinizle güncelleyin
 
 3. **NuGet Paketlerini Yükleyin**
    - Visual Studio'da projeyi açın
