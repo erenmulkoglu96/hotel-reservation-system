@@ -158,7 +158,12 @@ HotelReservationSystem/
    - Gelir, doluluk oranı ve diğer istatistikleri görüntüleyin
 
 
+## Güvenlik
 
+- Session tabanlı kimlik doğrulama
+- SQL Injection koruması (Entity Framework)
+- XSS koruması
+- HTTPS desteği
 
 
 
