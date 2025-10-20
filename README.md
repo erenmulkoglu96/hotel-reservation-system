@@ -32,3 +32,50 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 
 - **Frontend**: HTML5, CSS3, JavaScript
 
+
+
+
+## Kurulum
+
+
+1. **Projeyi Klonlayın**
+
+```bash
+   git clone https://github.com/kullaniciadi/HotelReservationSystem.git
+   cd HotelReservationSystem
+```
+
+2. **Web.config'i Düzenleyin**
+   - `Web.config` dosyasını açın
+   - Connection string'i kendi SQL Server bilgilerinizle güncelleyin:
+
+3. **NuGet Paketlerini Yükleyin**
+   - Visual Studio'da projeyi açın
+   - Tools → NuGet Package Manager → Package Manager Console
+   - `Update-Package` komutunu çalıştırın
+
+
+
+## Varsayılan Admin Girişi
+
+- **Kullanıcı Adı**: `admin`
+- **Şifre**: `admin123`
+
+
+## Ekran Görüntüleri
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
