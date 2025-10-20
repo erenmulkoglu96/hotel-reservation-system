@@ -112,28 +112,38 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 
 
 
-## Proje Yapısı
+##  Proje Yapısı
 ```
 HotelReservationSystem/
-├── Admin/                  # Admin panel sayfaları
-│   ├── CustomerList.aspx   # Müşteri listesi
-│   ├── RoomList.aspx       # Oda listesi
-│   ├── ReservationList.aspx # Rezervasyon listesi
-│   ├── Reports.aspx        # Raporlar
-│   ├── About.aspx          # Hakkımızda
-│   └── Contact.aspx        # İletişim
-├── Models/                 # Entity Framework modelleri
-│   ├── Customer.cs
-│   ├── Room.cs
-│   ├── Reservation.cs
-│   └── HotelDbContext.cs
-├── Database/               # Veritabanı scriptleri
-│   └── CreateDatabase.sql
-├── Content/                # CSS ve görseller
-├── Scripts/                # JavaScript dosyaları
-├── Site.Master             # Master page
-├── Login.aspx              # Giriş sayfası
-└── Default.aspx            # Ana sayfa
+├── Admin/                      # Admin panel sayfaları
+│   ├── CustomerList.aspx       # Müşteri listesi
+│   ├── CustomerForm.aspx       # Müşteri ekleme/düzenleme
+│   ├── RoomList.aspx           # Oda listesi
+│   ├── RoomForm.aspx           # Oda ekleme/düzenleme
+│   ├── ReservationList.aspx    # Rezervasyon listesi
+│   ├── ReservationForm.aspx    # Rezervasyon ekleme/düzenleme
+│   ├── Reports.aspx            # Raporlar
+│   ├── About.aspx              # Hakkımızda
+│   └── Contact.aspx            # İletişim
+├── Models/                     # Entity Framework modelleri
+│   ├── Customer.cs             # Müşteri modeli
+│   ├── Room.cs                 # Oda modeli
+│   ├── RoomType.cs             # Oda tipi modeli
+│   ├── Reservation.cs          # Rezervasyon modeli
+│   ├── User.cs                 # Kullanıcı modeli
+│   └── HotelDbContext.cs       # Database context
+├── Database/                   # Veritabanı scriptleri
+│   └── CreateDatabase.sql      # Database oluşturma scripti
+├── Content/                    # CSS ve statik dosyalar
+├── Scripts/                    # JavaScript dosyaları
+├── App_Data/                   # Uygulama verileri
+├── Site.Master                 # Master page
+├── Login.aspx                  # Giriş sayfası
+├── Default.aspx                # Ana sayfa (Dashboard)
+├── Web.config                  # Konfigürasyon
+├── .gitignore                  # Git ignore dosyası
+├── README.md                   # Bu dosya
+└── LICENSE                     # MIT License
 ```
 
 
