@@ -138,8 +138,24 @@ HotelReservationSystem/
 
 
 
+## Kullanım
 
+1. **Oda Ekleme**
+   - Oda Yönetimi → Yeni Oda Ekle
+   - Oda bilgilerini doldurun ve kaydedin
 
+2. **Müşteri Kaydetme**
+   - Müşteri Yönetimi → Yeni Müşteri Ekle
+   - Müşteri bilgilerini girin
+
+3. **Rezervasyon Oluşturma**
+   - Rezervasyon Yönetimi → Yeni Rezervasyon Ekle
+   - Müşteri, oda ve tarih seçin
+   - Rezervasyonu onaylayın
+
+4. **Rapor Görüntüleme**
+   - Raporlar → Tarih aralığı seçin
+   - Gelir, doluluk oranı ve diğer istatistikleri görüntüleyin
 
 
 
