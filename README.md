@@ -41,7 +41,7 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 1. **Projeyi Klonlayın**
 
 ```bash
-   git clone https://github.com/erenmulkoglu96/HotelReservationSystem.git
+   git clone https://github.com/erenmulkoglu96/hotel-reservation-system.git
    cd HotelReservationSystem
 ```
 
