@@ -42,7 +42,7 @@ Modern ve kullanıcı dostu otel yönetim sistemi. ASP.NET Web Forms, Entity Fra
 
 ```bash
    git clone https://github.com/erenmulkoglu96/hotel-reservation-system.git
-   cd HotelReservationSystem
+   cd hotel-reservation-system
 ```
 
 2. **Web.config'i Düzenleyin**
