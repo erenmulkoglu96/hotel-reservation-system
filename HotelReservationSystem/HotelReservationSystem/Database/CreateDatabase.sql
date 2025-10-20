@@ -1,4 +1,3 @@
--- Database oluştur
 CREATE DATABASE HotelReservationDB;
 GO
 
