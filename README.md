@@ -176,7 +176,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosy
 
 Proje Sahibi - [@erenmulkoglu96](https://github.com/erenmulkoglu96)
 
-Proje Linki: [https://github.com/erenmulkoglu96/HotelReservationSystem](https://github.com/erenmulkoglu96/HotelReservationSystem)
+Proje Linki: [https://github.com/erenmulkoglu96/hotel-reservation-system](https://github.com/erenmulkoglu96/hotel-reservation-system)
 
 
 
